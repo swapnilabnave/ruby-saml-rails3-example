@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 # Cal's patches to the ruby-saml gem.  Switch to the onelogin repo for production
 #gem 'ruby-saml', :git => "git://github.com/calh/ruby-saml.git", :branch => "add_idp_metadata"
 #gem 'ruby-saml', :git => "git://github.com/calh/ruby-saml.git", :branch => "add_slo"
-gem 'ruby-saml', :git => "git://github.com/calh/ruby-saml.git"
+gem 'ruby-saml', :git => "git://github.com/swapnilabnave/ruby-saml.git"
 
 gem 'therubyracer'
 gem 'rails',                      '3.2.12'
