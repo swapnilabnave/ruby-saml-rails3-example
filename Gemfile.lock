@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/swapnilabnave/ruby-saml.git
-  revision: 021737a4e43a9b17da39cbe20dfefddffe2941f9
+  revision: 9ee44aa368bf47e2d5bce363791bdfaa761239f6
   specs:
     ruby-saml (0.4.7)
       addressable
