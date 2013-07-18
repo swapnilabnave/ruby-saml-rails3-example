@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" cacheDuration="P3DT0H0M0.000S" entityID="http://sso.herokuapp.com/saml/shibboleth" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol"><Extensions><shibmd:Scope regexp="false">clareitystore.net</shibmd:Scope></Extensions><KeyDescriptor><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDQDCCAiigAwIBAgIVAPwiCw3nBiXgNssoNkZh3XXLo4BOMA0GCSqGSIb3DQEB
+BQUAMCAxHjAcBgNVBAMTFWlkcC5jbGFyZWl0eXN0b3JlLm5ldDAeFw0xMzA0MTUx
+OTEwMDdaFw0zMzA0MTUxOTEwMDdaMCAxHjAcBgNVBAMTFWlkcC5jbGFyZWl0eXN0
+b3JlLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKUqPoEwn1tT
++wCfTlvUcfZwkYws4lPxfUoUGpgpCXQbkLQhzDmm/tAA+dChIoaCOxmYPpMYhfrr
+Dlrjzl7WjwUl03/yB6ZZqc4qmriv3VGMzRg6dsy5WAzLcEdixlknL28CqZxjuMj9
+6nXhllM67loYuuQamCrSXtEbRETx4hWHZAOJjRzhkLv7D8y4Ftt0j0cQOhCuYM16
+rnum68KRvOG7f4PAu6QmROndvwUf7qMG4QBvhcWutd3afjfbsfI5Jg7nJVNKCRjh
+xhYRgLbyq2AmTjAua/v1sbuFsDI92foxTq1wV98yC0kAwgDclgvpFnIrgM1zaVcX
+Wh9CgnKerwMCAwEAAaNxMG8wTgYDVR0RBEcwRYIVaWRwLmNsYXJlaXR5c3RvcmUu
+bmV0hixodHRwczovL2lkcC5jbGFyZWl0eXN0b3JlLm5ldC9pZHAvc2hpYmJvbGV0
+aDAdBgNVHQ4EFgQUjW1xli4GNB53mZmypXw7LhnRH2IwDQYJKoZIhvcNAQEFBQAD
+ggEBAGPZrf8prSyR9A4NmENKQ9dCtTxWDz8r5pYjB6ZNv616X2T4jwSrVjToVi3v
+GA4uXrus/ddRirQHPKQCUCVfW+aNn2Ruix3TpY6mIkLyM3ExlX+QHargTzhKgRDt
+zUzr+e+1FAcUCF9AWchhB1YmPD16vYzXdhazffHr6XR5vdo5rURx1I7Rm/+Spq5A
+yiK19MlQrKAwyN/iHaPhjjrVKtvxnoNwRJBEMKcpWO+J4Lc5NWuPmTkB2HD4sCPJ
+C9IBfjz4pgb3YWhA+9kf4Jnsf70dE/Ijxfk20BhFPCwut7zaNlvKU2USdazY9kiN
+rwN0dIdbNBJwJEd8Qq43wA9wHyk=</ds:X509Certificate></ds:X509Data></ds:KeyInfo></KeyDescriptor><NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat><NameIDFormat>urn:clareity:safemls:nameid-format:loginid</NameIDFormat><NameIDFormat>com.clareity.safemls:nameid-format:loginid</NameIDFormat><SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.clareitystore.net/idp/profile/Shibboleth/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.clareitystore.net/idp/profile/SAML2/POST/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.clareitystore.net/idp/profile/SAML2/POST-SimpleSign/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.clareitystore.net/idp/profile/SAML2/Redirect/SSO"/><SingleSignOnService Binding="urn:oasis:namees:tc:SAML:2.0:bindings:SOAP" Location="https://idp.clareitystore.net/idp/profile/SAML2/SOAP/ECP"/></IDPSSODescriptor>
+<AttributeAuthorityDescriptor
+protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+<Extensions>
+<shibmd:Scope regexp="false">clareitysecurity.com</shibmd:Scope>
+</Extensions>
+<KeyDescriptor>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIDQDCCAiigAwIBAgIVAPwiCw3nBiXgNssoNkZh3XXLo4BOMA0GCSqGSIb3DQEB
+BQUAMCAxHjAcBgNVBAMTFWlkcC5jbGFyZWl0eXN0b3JlLm5ldDAeFw0xMzA0MTUx
+OTEwMDdaFw0zMzA0MTUxOTEwMDdaMCAxHjAcBgNVBAMTFWlkcC5jbGFyZWl0eXN0
+b3JlLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKUqPoEwn1tT
++wCfTlvUcfZwkYws4lPxfUoUGpgpCXQbkLQhzDmm/tAA+dChIoaCOxmYPpMYhfrr
+Dlrjzl7WjwUl03/yB6ZZqc4qmriv3VGMzRg6dsy5WAzLcEdixlknL28CqZxjuMj9
+6nXhllM67loYuuQamCrSXtEbRETx4hWHZAOJjRzhkLv7D8y4Ftt0j0cQOhCuYM16
+rnum68KRvOG7f4PAu6QmROndvwUf7qMG4QBvhcWutd3afjfbsfI5Jg7nJVNKCRjh
+xhYRgLbyq2AmTjAua/v1sbuFsDI92foxTq1wV98yC0kAwgDclgvpFnIrgM1zaVcX
+Wh9CgnKerwMCAwEAAaNxMG8wTgYDVR0RBEcwRYIVaWRwLmNsYXJlaXR5c3RvcmUu
+bmV0hixodHRwczovL2lkcC5jbGFyZWl0eXN0b3JlLm5ldC9pZHAvc2hpYmJvbGV0
+aDAdBgNVHQ4EFgQUjW1xli4GNB53mZmypXw7LhnRH2IwDQYJKoZIhvcNAQEFBQAD
+ggEBAGPZrf8prSyR9A4NmENKQ9dCtTxWDz8r5pYjB6ZNv616X2T4jwSrVjToVi3v
+GA4uXrus/ddRirQHPKQCUCVfW+aNn2Ruix3TpY6mIkLyM3ExlX+QHargTzhKgRDt
+zUzr+e+1FAcUCF9AWchhB1YmPD16vYzXdhazffHr6XR5vdo5rURx1I7Rm/+Spq5A
+yiK19MlQrKAwyN/iHaPhjjrVKtvxnoNwRJBEMKcpWO+J4Lc5NWuPmTkB2HD4sCPJ
+C9IBfjz4pgb3YWhA+9kf4Jnsf70dE/Ijxfk20BhFPCwut7zaNlvKU2USdazY9kiN
+rwN0dIdbNBJwJEd8Qq43wA9wHyk=</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</KeyDescriptor>
+<NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+<NameIDFormat>urn:clareity:safemls:nameid-format:loginid</NameIDFormat>
+</AttributeAuthorityDescriptor>
+</EntityDescriptor>

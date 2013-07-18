@@ -4,7 +4,7 @@ class Admin::Account < ActiveRecord::Base
   accepts_nested_attributes_for :setting
   #attr_accessor :id
 
-  
+
   # Internal getter for other controllers.  If host is not given
   # look it up using the request
   def self.get_saml_settings(host)
@@ -55,6 +55,6 @@ class Admin::Account < ActiveRecord::Base
 
     # return the Onelogin version of the Settings object
     return setting_SAML
-  end   
+  end
 
 end

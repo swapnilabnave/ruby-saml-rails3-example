@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -17,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20111108231310) do
     t.integer  "idle_timeout"
     t.integer  "session_timeout"
     t.integer  "setting_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   add_index "admin_accounts", ["setting_id"], :name => "index_admin_accounts_on_setting_id"
@@ -35,13 +36,13 @@ ActiveRecord::Schema.define(:version => 20111108231310) do
     t.string   "authn_context"
     t.string   "idp_cert_fingerprint"
     t.string   "idp_sso_target_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
   end
 
   create_table "stuffs", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

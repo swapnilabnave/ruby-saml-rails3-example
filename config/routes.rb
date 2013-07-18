@@ -2,13 +2,13 @@ SamlAuth::Application.routes.draw do
 
   resources :stuffs
 
-  namespace :admin do 
-    resources :accounts 
+  namespace :admin do
+    resources :accounts
     resources :settings
   end
   root :to => "stuffs#index"
   match "saml" => "saml#index"
-  match "saml/:action", :controller => "saml"  
+  match "saml/:action", :controller => "saml"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

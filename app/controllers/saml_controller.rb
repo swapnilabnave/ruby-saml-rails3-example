@@ -3,13 +3,17 @@ class SamlController < ApplicationController
   # Handy method to lookup settings/account
   before_filter :setup
 
-  # This is the first hit method that starts the SAML request flow 
+  def shibboleth
+    render file: "#{Rails.root}/IdPMetadata.xml", content_type: "application/xml"
+  end
+
+  # This is the first hit method that starts the SAML request flow
   def index
     # redirect to our setup page if nothing is defined
     # (the out-of-box n00b page)
     if @settings.nil?
       render :action => :no_settings
-      return 
+      return
     end
 
     request = Onelogin::Saml::Authrequest.new(@settings)
@@ -38,8 +42,8 @@ class SamlController < ApplicationController
         format.html {
           if session[:goback_to] != nil
             redirect_to session[:goback_to]
-          else  
-            render :action => :complete 
+          else
+            render :action => :complete
           end
         }
       else
@@ -61,7 +65,7 @@ class SamlController < ApplicationController
     if params[:SAMLRequest]
       return idp_logout_request
     end
-    # We've been given a response back from the IdP 
+    # We've been given a response back from the IdP
     if params[:SAMLResponse]
       return logout_response
     end
@@ -74,10 +78,10 @@ class SamlController < ApplicationController
   # Create an SP initiated SLO
   def sp_logout_request
 
-    # LogoutRequest accepts plain browser requests w/o paramters 
+    # LogoutRequest accepts plain browser requests w/o paramters
     logout_request = Onelogin::Saml::LogoutRequest.new( :settings => @settings )
 
-    # Since we created a new SAML request, save the transaction_id 
+    # Since we created a new SAML request, save the transaction_id
     # to compare it with the response we get back
     session[:transaction_id] = logout_request.transaction_id
 
@@ -168,7 +172,7 @@ class SamlController < ApplicationController
     render :xml => meta.generate
   end
 
-  private 
+  private
 
   # This creates the settings object needed for most of the functions
   def setup
@@ -177,7 +181,7 @@ class SamlController < ApplicationController
     #@account = Admin::Account.find(:all, :conditions => { :host => request.host }).first
   end
 
-  # Delete a user's session.  Add your own custom stuff in here 
+  # Delete a user's session.  Add your own custom stuff in here
   def delete_session
     session[:userid] = nil
     session[:attributes] = nil
