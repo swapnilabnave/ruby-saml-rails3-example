@@ -20,6 +20,7 @@ class SamlController < ApplicationController
 
     # Create the request, returning an action type and associated content
     action, content = request.create
+    logger.info "Saml Request : #{content}"
     case action
     when "GET"
       # for GET requests, do a redirect on the content

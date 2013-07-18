@@ -1,8 +1,8 @@
-# This is just an example scaffold to show how 
+# This is just an example scaffold to show how
 # the authentication hooks should work in your application.
 
 class StuffsController < ApplicationController
-  #  The before_filter calls authenticate below.  
+  #  The before_filter calls authenticate below.
   # Uncomment to force authentication for the entire Stuff controller
   #before_filter :authenticate
   # GET /stuffs
