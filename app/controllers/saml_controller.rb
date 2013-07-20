@@ -35,6 +35,8 @@ class SamlController < ApplicationController
     @response = Onelogin::Saml::Response.new(params[:SAMLResponse])
     @response.settings = @settings
     logger.info "NAMEID: #{@response.name_id}"
+    logger.info "Response : #{@response.inspect}"
+    logger.info "Response Attributes : #{@response.attributes}"
 
     respond_to do |format|
       if @response.is_valid?
